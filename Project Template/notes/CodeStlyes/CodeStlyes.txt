@@ -1,0 +1,11 @@
+
+
+Object Name:
+obj_: normal obEcts
+sys_: singleton manager objects
+par_: parent objects we should never be creating directly
+
+
+sys_data.save()
+obj_data_manager.save()
+
