@@ -1,11 +1,21 @@
 
 
 Object Name:
-obj_: normal obEcts
-sys_: singleton manager objects
-par_: parent objects we should never be creating directly
+  obj_: Default object prefix
+  sys_: Singleton manager objects
+  par_: Parent objects we should never be creating directly
 
+Sprites:
+  spr_
 
-sys_data.save()
-obj_data_manager.save()
+Sounds:
+  bgm_ 
+  sfx_
+
+Animantion Curves:
+  ac_
+
+Fonts: 
+  fn_
+
 
