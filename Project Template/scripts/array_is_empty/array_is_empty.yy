@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"Macros",
+  "%Name":"array_is_empty",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Macros",
+  "name":"array_is_empty",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Resources/Scripts.yy",
+    "name":"Arrays",
+    "path":"folders/Resources/Scripts/Arrays.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

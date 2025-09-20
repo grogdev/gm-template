@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"Macros",
+  "%Name":"approach_smooth",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Macros",
+  "name":"approach_smooth",
   "parent":{
     "name":"Scripts",
     "path":"folders/Resources/Scripts.yy",

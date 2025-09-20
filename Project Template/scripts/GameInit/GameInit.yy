@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"GameInit",
   "parent":{
-    "name":"Project Template",
-    "path":"Project Template.yyp",
+    "name":"Game",
+    "path":"folders/Game.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

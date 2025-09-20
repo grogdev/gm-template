@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"Macros",
+  "%Name":"Dice",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Macros",
+  "name":"Dice",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Resources/Scripts.yy",
+    "name":"Chance",
+    "path":"folders/Resources/Scripts/Chance.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

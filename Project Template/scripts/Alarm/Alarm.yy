@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"Macros",
+  "%Name":"Alarm",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Macros",
+  "name":"Alarm",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Resources/Scripts.yy",
+    "name":"Classes",
+    "path":"folders/Resources/Scripts/Classes.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

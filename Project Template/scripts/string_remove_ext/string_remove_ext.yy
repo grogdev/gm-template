@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"Macros",
+  "%Name":"string_remove_ext",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Macros",
+  "name":"string_remove_ext",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Resources/Scripts.yy",
+    "name":"Strings",
+    "path":"folders/Resources/Scripts/Strings.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

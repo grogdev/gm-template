@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"Macros",
+  "%Name":"weighted_random",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Macros",
+  "name":"weighted_random",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Resources/Scripts.yy",
+    "name":"Chance",
+    "path":"folders/Resources/Scripts/Chance.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

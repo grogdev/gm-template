@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"Macros",
+  "%Name":"sin_oscillate",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Macros",
+  "name":"sin_oscillate",
   "parent":{
     "name":"Scripts",
     "path":"folders/Resources/Scripts.yy",

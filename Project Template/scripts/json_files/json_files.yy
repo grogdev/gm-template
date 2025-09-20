@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"Macros",
+  "%Name":"json_files",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Macros",
+  "name":"json_files",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Resources/Scripts.yy",
+    "name":"Files",
+    "path":"folders/Resources/Scripts/Files.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

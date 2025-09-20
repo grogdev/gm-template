@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"Macros",
+  "%Name":"srvEvent",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Macros",
+  "name":"srvEvent",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Resources/Scripts.yy",
+    "name":"Project Template",
+    "path":"Project Template.yyp",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
