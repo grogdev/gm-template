@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"ScratchPad",
+  "%Name":"Script23",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"ScratchPad",
+  "name":"Script23",
   "parent":{
-    "name":"System",
-    "path":"folders/System.yy",
+    "name":"Project Template",
+    "path":"Project Template.yyp",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

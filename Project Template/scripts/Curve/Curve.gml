@@ -32,6 +32,10 @@ function Curve(_curve, _channel, _val1, _val2, _duration, _delay = 0) constructo
     return self
   }
    
+	get_pos = function(){
+		return __.position
+	}
+	
   on_update = function(_callback) {
     __.update_callback = _callback
     return self;

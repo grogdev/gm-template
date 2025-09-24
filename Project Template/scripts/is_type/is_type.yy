@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"ScratchPad",
+  "%Name":"is_type",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"ScratchPad",
+  "name":"is_type",
   "parent":{
-    "name":"System",
-    "path":"folders/System.yy",
+    "name":"Scripts",
+    "path":"folders/Resources/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

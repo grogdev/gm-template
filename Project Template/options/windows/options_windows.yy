@@ -1,6 +1,14 @@
 {
   "$GMWindowsOptions":"",
   "%Name":"Windows",
+  "ConfigValues":{
+    "ItchDev":{
+      "option_windows_disable_sandbox":"true",
+      "option_windows_company_info":"@GrogDEV",
+      "option_windows_version":"0.0.0.0",
+      "option_windows_interpolate_pixels":"false",
+    },
+  },
   "name":"Windows",
   "option_windows_allow_fullscreen_switching":false,
   "option_windows_borderless":false,

@@ -64,3 +64,4 @@ function EventListener(_type, _callback, _onlyOnce = false, _priority = 0, _owne
   onlyOnce = _onlyOnce;
   priority = _priority;
 }
+

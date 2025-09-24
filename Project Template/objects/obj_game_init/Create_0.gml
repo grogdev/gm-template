@@ -1,38 +1,104 @@
-/// @descrifption
-randomize()
-
-init_flow = []
+/// @description
 // Public
-queue = function(_obj_or_callback, _data = {}){
-	array_push(init_flow, [_obj_or_callback, _data])
+queue		= function(_type, _value, _data = {}){
+	is_type(_type, Type.STRING)
+	is_type(_data, Type.STRUCT)
+	array_push(__.init_flow, {
+		type: _type,
+		value: _value,
+		data: _data,
+	})
 	return self
 }
-
-// Events
-should_process_init_flow = false
-init = function(){
-	should_process_init_flow = true
+create	= function(_object, _data){
+	queue("object", _object, _data)
 	return self
-	//array_foreach(init_flow, function(_value){
-		//var _obj_or_callback 	= _value[0]
-		//var _data 						= _value[1]
+}
+log			= function(_string, _data){
+	queue("log", _string, _data)
+	return self
+}
+execute	= function(_callback, _data){
+	queue("callback", _callback, _data)
+	return self
+}
+wait = function(_duration, _data){
+	queue("wait", _duration, _data)
+	return self
+}
+wait_for = function(_callback, _data){
+	queue("wait for", _callback, _data)
+	return self
+}
+init 		= function(){
+	__.should_process_init_flow = true
+	//for (var i = 0; i < array_length(__.init_flow); i++){
+		//var _type		= _entry.type
+		//var _value	= _entry.value
+		//var _data 	= _entry.data
 		//
-		//if is_callable(_obj_or_callback){
-			//_obj_or_callback(_data)
-		//} else if is_string(_obj_or_callback) {
-			//show_debug_message($"--- GAME INIT: {_obj_or_callback}")
-		//}	else if object_exists(_obj_or_callback){
-			//instance_create_depth(0,0,0, _obj_or_callback, _data)
+		//switch _type {
+			//case "object":	
+				//instance_create_depth(0,0,0, _value, _data)
+			//break
+			//case "log":
+				//show_debug_message($"--- GAME INIT: {_value}")
+			//break
+			//case "callback":
+				//_value()
+			//break
+			//case "predicate":
+				//
+			//break
+			//
 		//}
-		//
-	//})
+	//}
 	//room_goto_next()
-
+	//
+	//// Must be called last
+	return undefined 
 }
 
+process_instruction = function(_instruction){
+	var _type		= _instruction.type
+	var _value	= _instruction.value
+	var _data 	= _instruction.data
+	
+	switch _type {
+		case "object":	
+			instance_create_depth(0,0,0, _value, _data)
+			array_delete(__.init_flow, 0, 1)
+			return true
+		break
+		case "log":
+			show_debug_message($"--- GAME INIT: {_value}")
+			array_delete(__.init_flow, 0, 1)
+			return true
+		break
+		case "callback":
+			_value()
+			array_delete(__.init_flow, 0, 1)
+			return true
+		break
+		case "predicate":
+			if _value() {
+				array_delete(__.init_flow, 0, 1)
+				return true
+			} else {
+				return false
+			}
+		break
+		case "wait":	
+			alarm[0] = _value
+			array_delete(__.init_flow, 0, 1)
+			return false
+		break
+	}
+}
 
-
- 
-
-
-
+// Private
+__ = {}
+with __ {
+	init_flow 								= []
+	should_process_init_flow	 	= false
+}

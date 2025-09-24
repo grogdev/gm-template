@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"ScratchPad",
+  "%Name":"ObjectPool",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"ScratchPad",
+  "name":"ObjectPool",
   "parent":{
-    "name":"System",
-    "path":"folders/System.yy",
+    "name":"WIP",
+    "path":"folders/WIP.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

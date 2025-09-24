@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"srvEvent",
   "parent":{
-    "name":"Project Template",
-    "path":"Project Template.yyp",
+    "name":"Services",
+    "path":"folders/System/Services.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
